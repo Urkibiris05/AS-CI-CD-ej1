@@ -1,4 +1,8 @@
 from wallet import Wallet
+from main import incrementar_saldo
+
+def test_incrementar_saldo():
+    assert incrementar_saldo(500) == 1500
 
 def test_getbalance():
     obj = Wallet(0)
